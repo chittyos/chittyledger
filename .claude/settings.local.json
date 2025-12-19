@@ -5,7 +5,14 @@
       "Bash(curl:*)",
       "Bash(pkill:*)",
       "Bash(PORT=5001 npm run dev)",
-      "Bash(npm run check:*)"
+      "Bash(npm run check:*)",
+      "Bash(npm install)",
+      "Bash(lsof:*)",
+      "Bash(npm run:*)",
+      "Bash(yes)",
+      "Bash(npm search:*)",
+      "Bash(gh org list:*)",
+      "WebSearch"
     ],
     "deny": []
   }

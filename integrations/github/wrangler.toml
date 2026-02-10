@@ -12,3 +12,7 @@ CHITTY_TENANT_SIGNING_KEY = ""
 [kv_namespaces]
 # TOKEN_CACHE binding for installation tokens
 bindings = []
+
+# ChittyTrack observability
+[[tail_consumers]]
+service = "chittytrack"

@@ -105,7 +105,7 @@ wrangler secret put CHITTY_ENCRYPTION_KEY
 
 # Deploy
 npm install
-cf deploy --env production
+wrangler deploy --env production
 
 cd ..
 ```
@@ -129,7 +129,7 @@ wrangler secret put PGP_PUBLIC_KEY
 
 # Deploy
 npm install
-cf deploy --env production
+wrangler deploy --env production
 
 cd ..
 ```
@@ -154,7 +154,7 @@ wrangler secret put FORTRESS_API_KEY
 
 # Deploy
 npm install
-cf deploy --env production
+wrangler deploy --env production
 ```
 
 ## 🔧 Fortress Setup Integration

@@ -136,9 +136,9 @@ fi
 echo -e "${YELLOW}🚀 Deploying to Cloudflare Workers...${NC}"
 
 if [[ "$ENVIRONMENT" == "production" ]]; then
-    cf deploy --env production
+    wrangler deploy --env production
 else
-    cf deploy --env staging
+    wrangler deploy --env staging
 fi
 
 echo -e "${GREEN}✅ Deployment successful!${NC}"

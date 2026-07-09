@@ -1459,9 +1459,9 @@ fi
 echo -e "${YELLOW}🚀 Deploying to Cloudflare Workers...${NC}"
 
 if [[ "$ENVIRONMENT" == "production" ]]; then
-    wrangler deploy --env production
+    cf deploy --env production
 else
-    wrangler deploy --env staging
+    cf deploy --env staging
 fi
 
 echo -e "${GREEN}✅ Deployment successful!${NC}"
@@ -1570,7 +1570,7 @@ To confirm your full stack:
 ✅ Connected Components in This Setup
 Component	Connected via	Status
 Neon PostgreSQL	via CHITTY_DATABASE_URL in Worker	✅ Confirmed by secret validation in script
-Cloudflare Worker	wrangler deploy + health check	✅ Live and tested
+Cloudflare Worker	cf deploy + health check	✅ Live and tested
 OpenAI Agent Gateway	OPENAI_API_KEY for completions/streaming	✅ Working in /chatgpt_complete and /stream
 ChittyOS App	.env and mcp-servers.json integration	✅ Configuration template provided
 Mercury Relay Bridge	🟡 You’ve staged the MCP side, but not yet injected Mercury worker tasks into this fortress.	

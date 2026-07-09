@@ -15,7 +15,7 @@ Your CAO bill retrieval system now integrates seamlessly with the MCP infrastruc
 │  CAO Workflows  │    │   MCP System    │    │ Memory-Cloude   │
 │                 │    │                 │    │                 │
 │ • Bill Retrieval│───▶│ • AI Analysis   │───▶│ • Bill Storage  │
-│ • 1Password Auth│    │ • Categorization│    │ • Search/Query  │
+│ • chittysecrets Auth│    │ • Categorization│    │ • Search/Query  │
 │ • Web Scraping  │    │ • Evidence Chain│    │ • Metadata Tags │
 │ • ChittyChain   │    │ • Tax Prep      │    │ • Version Ctrl  │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
@@ -46,7 +46,7 @@ wrangler secret put CAO_WORKSPACE_PATH
 
 # Deploy
 npm install
-wrangler deploy --env production
+cf deploy --env production
 ```
 
 ### 2. Update CAO Workspace Integration
@@ -154,7 +154,7 @@ COORDINATOR_MCP_URL=https://chitty-coordinator-mcp.your-subdomain.workers.dev
 CHATGPT_MCP_URL=https://chitty-chatgpt-mcp.your-subdomain.workers.dev
 FORTRESS_MCP_URL=https://chitty-fortress-mcp.your-subdomain.workers.dev
 
-# 1Password Integration
+# chittysecrets Integration
 ONEPASSWORD_SERVICE_ACCOUNT_TOKEN=your_1password_service_account_token
 EOF
 ```

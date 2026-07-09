@@ -42,7 +42,7 @@ wrangler secret put CAO_WORKSPACE_PATH
 
 # Deploy
 npm install
-wrangler deploy --env production
+cf deploy --env production
 ```
 
 ### 3. Update CAO Integration
